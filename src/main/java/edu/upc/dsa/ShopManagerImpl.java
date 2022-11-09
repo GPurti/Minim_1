@@ -100,7 +100,6 @@ public class ShopManagerImpl implements ShopManager {
             logger.warn(o.getCoins()+" is not enough money");
             throw new NotEnoughMoneyException();
         }
-
         else {
             users.get(id).addObject(o);
             return users.get(id).getBoughtobjects();
